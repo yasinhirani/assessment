@@ -1,4 +1,6 @@
 .dropdown-item{
+    color: $gray-500;
+    padding: 10px 8px;
     &:hover,
     &:active{
     color: black;
