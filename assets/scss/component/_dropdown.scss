@@ -1,0 +1,13 @@
+.dropdown-item{
+    &:hover,
+    &:active{
+    color: black;
+    background-color: $gray-300;
+    font-weight: 500;
+    }
+}
+.dropdown-active{
+    color: black;
+    background-color: $gray-300;
+    font-weight: 500;
+}

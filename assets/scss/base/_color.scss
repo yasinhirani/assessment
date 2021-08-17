@@ -1,0 +1,33 @@
+$gray-100: #f8f9fa;
+$gray-200: #f5f6fa;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Theme colors
+$primary: #296bb3;
+$secondary: #f5f6fa;
+$danger: #ff82ac;
+$warning: #ffbb38;
+$orange: #ff714f;
+$success: #49ae69;
+$light-green: #16dbcc;
+$info: #396aff;
+$purple: #806dd2;
+$success-light: lighten($success, 40%);
+$danger-light: lighten($danger, 20%);
+
+// Theme Map
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "danger": $danger,
+    "gray-500": $gray-500,
+    // "primary-light": $primary-light,
+    "success-light": $success-light,
+    "danger-light": $danger-light,
+);

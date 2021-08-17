@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'app-icon';
+  src:  url('fonts/app-icon.eot?dc0yms');
+  src:  url('fonts/app-icon.eot?dc0yms#iefix') format('embedded-opentype'),
+    url('fonts/app-icon.ttf?dc0yms') format('truetype'),
+    url('fonts/app-icon.woff?dc0yms') format('woff'),
+    url('fonts/app-icon.svg?dc0yms#app-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-plus:before {
+  content: "\e91e";
+  color: #fff;
+}
+.icon-action:before {
+  content: "\e91d";
+}
+.icon-filter:before {
+  content: "\e91b";
+}
+.icon-filter-filled:before {
+  content: "\e91c";
+}
+.icon-menu:before {
+  content: "\e91a";
+  color: #fff;
+}
+.icon-delete:before {
+  content: "\e918";
+  color: #9da6ba;
+}
+.icon-add:before {
+  content: "\e917";
+  color: #fff;
+}
+.icon-spotwasher:before {
+  content: "\e919";
+  color: #fff;
+}
+.icon-close:before {
+  content: "\e916";
+}
+.icon-search:before {
+  content: "\e914";
+  color: #9da6ba;
+}
+.icon-star:before {
+  content: "\e915";
+  color: #b1b8c8;
+}
+.icon-save:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-arrow-down:before {
+  content: "\e900";
+}
+.icon-arrow-dropdown:before {
+  content: "\e901";
+}
+.icon-avg-reliability-rating:before {
+  content: "\e902";
+  color: #16dbcc;
+}
+.icon-avg-spotwasher-rating:before {
+  content: "\e903";
+  color: #396aff;
+}
+.icon-calendar:before {
+  content: "\e904";
+}
+.icon-dashboard:before {
+  content: "\e905";
+  color: #6ca6e6;
+}
+.icon-discount:before {
+  content: "\e906";
+  color: #ff714f;
+}
+.icon-edit:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-gross-revenue:before {
+  content: "\e908";
+  color: #7b67d0;
+}
+.icon-location:before {
+  content: "\e909";
+  color: #9da6ba;
+}
+.icon-logout:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-net-revenue:before {
+  content: "\e90b";
+  color: #49ae69;
+}
+.icon-password:before {
+  content: "\e90c";
+}
+.icon-settings:before {
+  content: "\e90d";
+  color: #6ca6e6;
+}
+.icon-tick:before {
+  content: "\e90e";
+  color: #fff;
+}
+.icon-time:before {
+  content: "\e90f";
+  color: #9da6ba;
+}
+.icon-total-cars:before {
+  content: "\e910";
+  color: #ffbb38;
+}
+.icon-touch-up-requests:before {
+  content: "\e911";
+  color: #ff82ac;
+}
+.icon-username:before {
+  content: "\e912";
+  color: #6ca6e6;
+}

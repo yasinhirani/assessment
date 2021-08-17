@@ -1,0 +1,24 @@
+.table{
+    th{
+        vertical-align: middle;
+    }
+    td{
+        vertical-align: middle;
+            min-width: 200px;
+        &:last-child{
+            min-width: 100px;
+        }
+        .badge{
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.dropdown-toggle::after {
+    content: none;
+}
+.icon-edit::before{
+    color:#9da6ba;
+}

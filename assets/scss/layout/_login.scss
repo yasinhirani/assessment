@@ -1,0 +1,59 @@
+.login{
+    border-radius: 20px;
+}
+.form-user{
+    position: relative;
+    .icon-username{
+        position: absolute;
+        top: 15px;
+        font-size: 20px;
+        left: 10px;
+        &::before{
+            color: #000000;
+        }
+    }
+}
+.form-password{
+    position: relative;
+    .icon-password{
+        position: absolute;
+        top: 15px;
+        font-size: 20px;
+        left: 10px;
+    }
+}
+.login-img{
+    width: 200px;
+    img{
+        max-width: 100%;
+    }
+}
+.username{
+    width: 300px;
+    padding: 26px 10px 26px 35px;
+    background-color: $gray-200;
+    border-radius: 10px;
+    letter-spacing: .8px;
+    &::placeholder{
+        color: $gray-500;
+    }
+    @include media-breakpoint-down(sm){
+        width: 240px;
+    }
+}
+.password{
+    width: 300px;
+    padding: 26px 10px 26px 35px;
+    background-color: $gray-200;
+    border-radius: 10px;
+    letter-spacing: .8px;
+    &::placeholder{
+        color: $gray-500;
+    }
+    @include media-breakpoint-down(sm){
+        width: 240px;
+    }
+}
+.custom-btn{
+    border-radius: 10px;
+}
