@@ -9916,6 +9916,10 @@ a.text-danger-light:hover, a.text-danger-light:focus {
   font-weight: 500;
 }
 
+.icon-plus::before {
+  color: #6ca6e6;
+}
+
 .font-xs {
   font-size: 12px;
 }
