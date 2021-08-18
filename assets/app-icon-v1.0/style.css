@@ -24,7 +24,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-menu:before {
+  content: "\e9bd";
+  color: #fff;
+}
 .icon-plus:before {
   content: "\e91e";
   color: #fff;

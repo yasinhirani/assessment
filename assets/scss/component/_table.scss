@@ -14,11 +14,26 @@
             justify-content: center;
             align-items: center;
         }
+        .dropdown-item{
+            color: $gray-500;
+            padding: 10px 8px;
+            &:hover,
+            &:active{
+            color: black;
+            background-color: $gray-300;
+            font-weight: 500;
+            }
+        }
+        .dropdown-active{
+            color: black;
+            background-color: $gray-300;
+            font-weight: 500;
+        }
     }
-}
-.dropdown-toggle::after {
-    content: none;
 }
 .icon-edit::before{
     color:#9da6ba;
+}
+.icon-plus::before{
+    color: #6ca6e6;
 }

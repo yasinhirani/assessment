@@ -16,14 +16,13 @@ body {
     overflow: hidden;
 }
 // Reset
-input[type="radio"],
-input[type="checkbox"] {
-    display: none;
-}
 label{
     cursor: pointer;
 }
-.overflow-y-auto{
+.overflow-vertical{
     overflow-y: auto;
     overflow-x: hidden;
-  }
+}
+.icon-total-cars::before{
+    color: $primary;
+}

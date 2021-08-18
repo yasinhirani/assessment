@@ -1,80 +1,32 @@
 .sidebar {
-    width: 250px;
-    flex: 0 0 250px;
-    
-    transition: ease-in-out all .2s;
-    @include media-breakpoint-down(sm) {
-        width: 70px;
-        flex: 0 0 70px;
-        .nav-link-title {
-           visibility: hidden;
-        }
-    }
-    .toggle-icon {
-        width: 22px;
-        height: 22px;
-        color: $gray-600;
-        position: absolute;
-        top: 6px;
-        right: -12px;
-    }
-    .nav {
-       
-        .nav-link {
-            display: flex;
-            align-items: center;
-            text-transform: uppercase;
-            font-size: 14px;
-            border-bottom: 1px solid rgba($white, 0.1);
-
-            &:active,
-            &:hover,
-            &.active {
-                background-color: rgba($white, 0.2);
-            }
-        }
-    }
-    .sidebar-footer {
-        background-color: darken($primary, 8%);
-        color: $white;
-    }
+    width: 280px;
+    flex: 0 0 280px;
+    transition: all .3s ease-in-out;
+    white-space: nowrap;
+    position: absolute;
+    right: -100%;
 }
-
-@include media-breakpoint-down(md) {
-    #sidebar-toggle {
-        &:checked {
-            ~ .sidebar {
-                width: 70px;
-                flex: 0 0 70px;
-              
-                transition: ease-in-out all .2s;
-                .toggle-icon {
-                    span {
-                        transform: rotate(180deg);
-                    }
-                }
-                .nav-link-title {
-                  visibility: hidden;
-                }
-            }
+.backdrop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: rgba($black, 0.3);
+}
+#new{
+    display: none;
+    &:checked{
+        ~.sidebar{
+            right: 0;
+            z-index: 100;
+        }
+        ~ .backdrop{
+            display: block;
         }
     }
 }
-@include media-breakpoint-down(sm) {
-    #sidebar-toggle {
-        &:checked {
-            ~ .sidebar {
-                width: 250px;
-                flex: 0 0 250px;
-                position: absolute;
-                z-index: 1;
-                .nav-link-title {
-                    visibility: visible;
-                  }
-            }
-        }
-    }
-}
-
 
 
