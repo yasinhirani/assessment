@@ -1,77 +1,77 @@
-.spotwasher{.table{
-    th{
-        vertical-align: middle;
+.spotwasher {
+    th {
+      vertical-align: middle;
     }
-    td{
-        vertical-align: middle;
-            min-width: 200px;
-        &:last-child{
-            min-width: 100px;
+    td {
+      vertical-align: middle;
+      min-width: 200px;
+      &:last-child {
+        min-width: 100px;
+      }
+      .badge {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .dropdown-item {
+        color: $gray-500;
+        padding: 10px 8px;
+        &:hover,
+        &:active {
+          color: black;
+          background-color: $gray-300;
+          font-weight: 500;
         }
-        .badge{
-            width: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .dropdown-item{
-            color: $gray-500;
-            padding: 10px 8px;
-            &:hover,
-            &:active{
-            color: black;
-            background-color: $gray-300;
-            font-weight: 500;
-            }
-        }
-        .dropdown-active{
-            color: black;
-            background-color: $gray-300;
-            font-weight: 500;
-        }
+      }
+      .dropdown-active {
+        color: black;
+        background-color: $gray-300;
+        font-weight: 500;
+      }
     }
 }
+.icon-edit::before {
+  color: #9da6ba;
 }
-.icon-edit::before{
-    color:#9da6ba;
-}
-.icon-plus::before{
-    color: #6ca6e6;
+.icon-plus::before {
+  color: #6ca6e6;
 }
 //schedule-table
-.schedule-table{
-    th{
-        vertical-align: middle;
-        &:not(:first-child){
-            background-color: $gray-200;
-        }
-        &:nth-child(4){
-            border-top: 2px solid $primary;
-            background-color: $white;
-        }
+.schedule-table {
+  th {
+    vertical-align: middle;
+    &:not(:first-child) {
+      background-color: $gray-200;
     }
-    td,th{
-        &:not(:first-child){
-            vertical-align: middle;
-            min-width: 200px;
-        }
-        &:first-child{
-            min-width: 80px;
-            // vertical-align: top;
-            color: $gray-500;
-            font-size: 14px;
-            font-weight: 500;
-            border: 0;
-        }
+    &:nth-child(4) {
+      border-top: 2px solid $primary;
+      background-color: $white;
     }
-    @each $key,$value in $theme-colors {
-        .borders-#{$key}{
-            background-color: $success-light;
-            border-left: 3px solid $value;
-        }
+  }
+  td,
+  th {
+    &:not(:first-child) {
+      vertical-align: middle;
+      min-width: 200px;
     }
+    &:first-child {
+      min-width: 80px;
+      // vertical-align: top;
+      color: $gray-500;
+      font-size: 14px;
+      font-weight: 500;
+      border: 0;
+    }
+  }
+  @each $key, $value in $theme-colors {
+    .borders-#{$key} {
+      background-color: $success-light;
+      border-left: 3px solid $value;
+    }
+  }
 }
-.hidden{
-    visibility: hidden;
-    opacity: 0;
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
